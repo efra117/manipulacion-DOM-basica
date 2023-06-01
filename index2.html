@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM básica - Curso práctico de JS</title>
+</head>
+<body>
+    <h1>Manipulación del DOM básica</h1>
+
+    <form id="form"> <!--un form siempre interpreta que el último botón que encuentra es un boton de submit, a menos de que nosotros indiquemos que es un boton en el type del boton-->
+        <input id="calculo1" placeholder="Escribe algo aquí">
+        <input onchange="console.log('cambió el input')" id="calculo2" placeholder="Escribe algo aquí">
+        <button type="button" id="btnCalcular" >Calcular</button>
+        <p id="result"></p>
+    </form>
+    
+
+    <script src="./script2.js"></script>
+</body>
+</html>
